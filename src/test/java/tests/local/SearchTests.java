@@ -21,7 +21,3 @@ public class SearchTests extends TestBase {
                     .shouldHave(sizeGreaterThan(0)));
     }
 }
-//org.wikipedia.alpha:id/search_text_view
-//org.wikipedia.alpha:id/search_src_text
-//org.wikipedia.alpha:id/search_text_view
-//org.wikipedia.alpha:id/fragment_search_results
