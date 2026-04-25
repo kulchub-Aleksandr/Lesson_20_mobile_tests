@@ -12,4 +12,10 @@ public interface LocalConfig extends Config {
 
     @Key("localServerUrl")
     String getServerUrl();
+
+    @Key("app_package")
+    String getAppPackage();
+
+    @Key("app_activity")
+    String getAppActivity();
 }

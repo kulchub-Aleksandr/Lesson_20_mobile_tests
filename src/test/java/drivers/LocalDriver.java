@@ -33,8 +33,8 @@ public class LocalDriver implements WebDriverProvider {
                 .setPlatformVersion(localConfig.getPlatformVersion())
                 .setDeviceName(localConfig.getDeviceName())
                 .setApp(getAppPath())
-                .setAppPackage("org.wikipedia.alpha")
-                .setAppActivity("org.wikipedia.main.MainActivity");
+                .setAppPackage(localConfig.getAppPackage())
+                .setAppActivity(localConfig.getAppActivity());
 
         return new AndroidDriver(getAppiumServerUrl(), options);
     }
@@ -42,7 +42,6 @@ public class LocalDriver implements WebDriverProvider {
     public static URL getAppiumServerUrl() {
         try {
             return new URL(localConfig.getServerUrl());
-            //return new URL("http://localhost:4723/wd/hub");
         } catch (MalformedURLException e) {
             throw new RuntimeException(e);
         }

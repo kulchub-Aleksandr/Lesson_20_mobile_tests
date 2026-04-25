@@ -22,7 +22,7 @@ public class TestBase {
     static void beforeAll() {
 
             if (deviceHost == null) {
-                deviceHost = "remote";
+                deviceHost = "local";
 
             }
             switch (deviceHost) {
@@ -47,6 +47,7 @@ public class TestBase {
     void addAttachments() {
 
         if (deviceHost.equals("remote")) {
+
             Attach.pageSource();
             String sessionId = Selenide.sessionId().toString();
             closeWebDriver();
