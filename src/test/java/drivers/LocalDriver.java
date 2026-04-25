@@ -20,9 +20,9 @@ import static io.appium.java_client.remote.MobilePlatform.ANDROID;
 import static org.apache.commons.io.FileUtils.copyInputStreamToFile;
 
 public class LocalDriver implements WebDriverProvider {
-    static LocalConfig localConfig = ConfigFactory.create(LocalConfig.class,
-            System.getProperties());
-    public static String deviceHost = System.getProperty("deviceHost");
+    static LocalConfig localConfig = ConfigFactory.create(LocalConfig.class, System.getProperties());
+
+
     @Nonnull
     @Override
     public WebDriver createDriver(@Nonnull Capabilities capabilities) {

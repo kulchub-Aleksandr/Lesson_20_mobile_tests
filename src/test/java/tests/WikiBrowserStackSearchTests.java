@@ -1,5 +1,7 @@
 package tests;
 
+import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
 import static com.codeborne.selenide.CollectionCondition.sizeGreaterThan;
@@ -9,8 +11,10 @@ import static io.appium.java_client.AppiumBy.accessibilityId;
 import static io.appium.java_client.AppiumBy.id;
 import static io.qameta.allure.Allure.step;
 
-public class BrowserStackSearchTests extends TestBase {
+public class WikiBrowserStackSearchTests extends TestBase {
 
+    @Tag("remote")
+    @DisplayName("Тестировании мобильного приложения Wikipedia на удаленном эмуляторе")
     @Test
     void successfulSearchTest() {
         step("Type search", () -> {

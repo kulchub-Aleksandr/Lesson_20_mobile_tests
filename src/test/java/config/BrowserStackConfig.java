@@ -2,7 +2,7 @@ package config;
 
 import org.aeonbits.owner.Config;
 
-@Config.Sources("classpath:android.properties")
+@Config.Sources("classpath:browserstack_driver.properties")
 public interface BrowserStackConfig extends Config {
     @Key("browserstack.user")
     String browserstackUser();

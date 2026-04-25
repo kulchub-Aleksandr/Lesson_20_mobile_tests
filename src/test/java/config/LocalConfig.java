@@ -2,7 +2,7 @@ package config;
 
 import org.aeonbits.owner.Config;
 
-@Config.Sources({"classpath:local.properties"})
+@Config.Sources({"classpath:local_driver.properties"})
 public interface LocalConfig extends Config {
     @Key("device")
     String getDeviceName();
