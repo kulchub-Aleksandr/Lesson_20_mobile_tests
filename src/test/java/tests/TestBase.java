@@ -22,7 +22,7 @@ public class TestBase {
     static void beforeAll() {
 
             if (deviceHost == null) {
-                deviceHost = "local";
+                deviceHost = "remote";
 
             }
             switch (deviceHost) {
