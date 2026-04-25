@@ -1,4 +1,4 @@
-package tests.browserstack;
+package tests;
 
 import org.junit.jupiter.api.Test;
 
@@ -9,7 +9,7 @@ import static io.appium.java_client.AppiumBy.accessibilityId;
 import static io.appium.java_client.AppiumBy.id;
 import static io.qameta.allure.Allure.step;
 
-public class SearchTests extends TestBase {
+public class BrowserStackSearchTests extends TestBase {
 
     @Test
     void successfulSearchTest() {
