@@ -56,12 +56,18 @@ tasks.withType(Test) {
 
 task remote_test(type: Test) {
     useJUnitPlatform {
+        testClassesDirs = sourceSets.test.output.classesDirs
+        classpath = sourceSets.test.runtimeClasspath
+        systemProperty "deviceHost", "remote"
         includeTags("remote")
     }
 }
 
 task local_test(type: Test) {
     useJUnitPlatform {
+        testClassesDirs = sourceSets.test.output.classesDirs
+        classpath = sourceSets.test.runtimeClasspath
+        systemProperty "deviceHost", "local"
         includeTags("local")
     }
 }
