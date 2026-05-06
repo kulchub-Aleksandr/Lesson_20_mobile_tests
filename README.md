@@ -26,8 +26,8 @@
 <img width="6%" title="JUnit5" src="images/logo/JUnit5.svg">
 <img width="6%" title="Android" src="images/logo/android-original.svg">
 <img width="6%" title="Androidstudio" src="images/logo/androidstudio-original.svg">
-<img width="5%" title="Rest_assured" src="images/logo/appium.png">
-<img width="5%" title="Selenoid" src="images/logo/browserstack-original.svg">
+<img width="5%" title="Appium" src="images/logo/appium.png">
+<img width="5%" title="Browserstack" src="images/logo/browserstack-original.svg">
 <img width="6%" title="Jenkins" src="images/logo/Jenkins.svg">
 <img width="6%" title="Allure Report" src="images/logo/Allure_Report.svg">
 <img width="6%" title="Telegram" src="images/logo/Telegram.svg">
