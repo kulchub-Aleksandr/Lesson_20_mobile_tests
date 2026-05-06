@@ -18,18 +18,8 @@ import static com.codeborne.selenide.Selenide.open;
 public class TestBase {
     public static String deviceHost = System.getProperty("deviceHost");
 
-//    private static final String BROWSERSTACK_DRIVER = "remote",
-//            LOCAL_DRIVER = "local";
-
     @BeforeAll
     static void beforeAll() {
-
-//            switch (System.getProperty("deviceHost", BROWSERSTACK_DRIVER)) {
-//                case BROWSERSTACK_DRIVER -> Configuration.browser = BrowserStackDriver.class.getName();
-//                case LOCAL_DRIVER -> Configuration.browser = LocalDriver.class.getName();
-//            }
-
-
         deviceHost = System.getProperty("deviceHost", "local"); // default local
 
         switch (deviceHost.toLowerCase()) {
