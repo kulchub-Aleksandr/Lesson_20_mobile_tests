@@ -24,8 +24,8 @@
 <img width="6%" title="Selenide" src="images/logo/Selenide.svg">
 <img width="6%" title="Gradle" src="images/logo/Gradle.svg">
 <img width="6%" title="JUnit5" src="images/logo/JUnit5.svg">
-<img width="6%" title="JUnit5" src="images/logo/android-original.svg">
-<img width="6%" title="JUnit5" src="images/logo/androidstudio-original.svg">
+<img width="6%" title="Android" src="images/logo/android-original.svg">
+<img width="6%" title="Androidstudio" src="images/logo/androidstudio-original.svg">
 <img width="5%" title="Rest_assured" src="images/logo/appium.png">
 <img width="5%" title="Selenoid" src="images/logo/browserstack-original.svg">
 <img width="6%" title="Jenkins" src="images/logo/Jenkins.svg">
@@ -41,7 +41,8 @@
 - В качестве фреймворка модульного тестирования задействован <code>JUnit 5</code>.
 - `Page Object` шаблон проектирования.
 - Использована технология `Owner` для придания тестам гибкости и легкости конфигурации.
-- При прогоне UI тестов браузер запускается в [Selenoid](https://aerokube.com/selenoid/).
+- Локальный запуск тестов на компьютере использует технологии Android Studio, Appium Server и Appium ([инструкция](https://autotest.how/appium-setup-for-local-android-tutorial-md))
+- Удаленный запуск тестов происходит на стороннем сервисе  [Browserstack](https://app-automate.browserstack.com/dashboard/v2/quick-start/setup-browserstack-sdk).
 - Для удаленного запуска реализована джоба в **Jenkins** с формированием Allure-отчета и отправкой результатов в **Telegram** при помощи бота.
 - Осуществлена интеграция с **Allure TestOps** и **Jira**
 - Реализована возможность запуска тестов непосредственно из **Allure TestOps** — как полного прогона, так и выборочного выполнения отдельных тест‑кейсов или групп тестов (по тегам, компонентам, приоритетам и другим фильтрам).
@@ -81,6 +82,7 @@ flowchart LR;
 ```
 ### Удалённый запуск осуществляется через Jenkins
 
+Удаленный запуск происходит на стороннем сервисе Browserstack.
 При необходимости также можно переопределить параметры запуска
 
 ```bash
