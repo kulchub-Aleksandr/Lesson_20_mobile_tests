@@ -46,7 +46,7 @@ public class TestBase {
 
         if (deviceHost.equals("remote")) {
 
-            //Attach.pageSource();
+            Attach.pageSource();
             String sessionId = Selenide.sessionId().toString();
             closeWebDriver();
 
