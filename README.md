@@ -191,5 +191,5 @@ src="images/screen/Jenkins_2.png">
 
 Видеопример выполнения теста на сервисе Browserstack.
 <p align="center">
-  <img title="Selenoid Video" src="images/video/UI.gif">
+  <img title="Selenoid Video" src="images/video/Wiki.gif">
 </p>
