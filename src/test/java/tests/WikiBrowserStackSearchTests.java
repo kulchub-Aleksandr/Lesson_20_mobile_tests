@@ -3,6 +3,7 @@ package tests;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
+import pages.SearchPage;
 
 import static com.codeborne.selenide.CollectionCondition.sizeGreaterThan;
 import static com.codeborne.selenide.Selenide.$;
@@ -13,16 +14,24 @@ import static io.qameta.allure.Allure.step;
 
 public class WikiBrowserStackSearchTests extends TestBase {
 
+    SearchPage searchPage = new SearchPage();
+
     @Tag("remote")
     @DisplayName("Тестировании мобильного приложения Wikipedia на удаленном эмуляторе")
     @Test
     void successfulSearchTest() {
-        step("Type search", () -> {
-            $(accessibilityId("Search Wikipedia")).click();
-            $(id("org.wikipedia.alpha:id/search_src_text")).sendKeys("Appium");
-        });
-        step("Verify content found", () ->
-            $$(id("org.wikipedia.alpha:id/page_list_item_title"))
-                    .shouldHave(sizeGreaterThan(0)));
+        searchPage.skipStartScreen()
+                .clickSearchArea()
+                .enterSearchQuery()
+                .verifyResultListIsNotEmpty();
+
+
+//        step("Type search", () -> {
+//            $(accessibilityId("Search Wikipedia")).click();
+//            $(id("org.wikipedia.alpha:id/search_src_text")).sendKeys("Appium");
+//        });
+//        step("Verify content found", () ->
+//            $$(id("org.wikipedia.alpha:id/page_list_item_title"))
+//                    .shouldHave(sizeGreaterThan(0)));
     }
 }
