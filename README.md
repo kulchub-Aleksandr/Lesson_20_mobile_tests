@@ -27,12 +27,12 @@
 <img width="6%" title="Android" src="images/logo/android-original.svg">
 <img width="6%" title="Androidstudio" src="images/logo/androidstudio-original.svg">
 <img width="5%" title="Appium" src="images/logo/appium.png">
+<img width="6%" title="Appium _Server.png" src="images/logo/appium _server.png">
 <img width="5%" title="Browserstack" src="images/logo/browserstack-original.svg">
 <img width="6%" title="Jenkins" src="images/logo/Jenkins.svg">
 <img width="6%" title="Allure Report" src="images/logo/Allure_Report.svg">
 <img width="6%" title="Telegram" src="images/logo/Telegram.svg">
 <img width="5%" title="Allure TestOps" src="images/logo/AllureTestOps.svg">
-<img width="5%" title="Jira" src="images/logo/Jira.svg">
 </p>
 
 - В данном проекте реализованны мобильные автотесты на UI.
@@ -44,8 +44,8 @@
 - Локальный запуск тестов на компьютере использует технологии Android Studio, Appium Server и Appium ([инструкция](https://autotest.how/appium-setup-for-local-android-tutorial-md))
 - Удаленный запуск тестов происходит на стороннем сервисе  [Browserstack](https://app-automate.browserstack.com/dashboard/v2/quick-start/setup-browserstack-sdk).
 - Для удаленного запуска реализована джоба в **Jenkins** с формированием Allure-отчета и отправкой результатов в **Telegram** при помощи бота.
-- Осуществлена интеграция с **Allure TestOps** и **Jira**
-- Реализована возможность запуска тестов непосредственно из **Allure TestOps** — как полного прогона, так и выборочного выполнения отдельных тест‑кейсов или групп тестов (по тегам, компонентам, приоритетам и другим фильтрам).
+- Осуществлена интеграция с **Allure TestOps**
+- Реализована возможность запуска тестов непосредственно из **Allure TestOps** — как полного прогона, так и выборочного выполнения отдельных тест‑кейсов или групп тестов.
 
 ### Реализована следующая схема взаимодействия технологий и инструментов
 
@@ -58,12 +58,12 @@ flowchart LR;
     JUnit 5)-->B(GitHub);
     B-->C(Jenkins);
     C-->D(Telegram);
-    C<==>E(Selenoid);
+    C<==>E(Browserstack);
     
     C-->G(Allure_Report);
     
     C<==>F(Allure_TestOps);
-    F-->J(Jira);
+    
 
 ```
 ## :arrow_forward: Запуск автотестов
@@ -87,25 +87,25 @@ flowchart LR;
 
 ```bash
 clean
-test
--DremoteUrl="${SELENOID_URL}"
--DbaseUrl="${BASE_URL}"
--DbrowserSize="${BROWSER_SIZE}"
--Dbrowser="${BROWSER_NAME}"
--Dbrowser_version="${BROWSER_VERSION}"
--DbaseUri="$BASE_URI"
--DbasePath="$BASE_PATH"
+remote_test
+-DdeviceHost="$HOST"
+-Dbrowserstack.user="$USER"
+-Dbrowserstack.key="$KEY"
+-Dapp="$APP"
+-Ddevice="$DEVICE"
+-Dos_version="$OS"
+-DbaseUrl="$BASE_URL"
 ```
 
 ### Параметры сборки
 
-- <code>BROWSER_NAME</code> – браузер, в котором будут выполняться тесты.
-- <code>BROWSER_VERSION</code> – версия браузера, в которой будут выполняться тесты.
-- <code>BROWSER_SIZE</code> – размер окна браузера, в котором будут выполняться тесты.
-- <code>BASE_URL</code> – Url, по которому будет открываться тестируемое приложение.
-- <code>BASE_URI</code> — базовый URI API.
-- <code>BASE_PATH</code>— базовый путь к API.
-- <code>REMOTE_BROWSER_URL</code> – адрес удаленного сервера, на котором будут запускаться тесты.
+- <code>HOST</code> – браузер, в котором будут выполняться тесты.
+- <code>USER</code> – логин (имя пользователя) для аутентификации в сервисе BrowserStack.
+- <code>KEY</code> – секретный ключ (API‑ключ) для аутентификации.
+- <code>APP</code> – идентификатор приложения установленного на стороннем сервисе  [Browserstack].
+- <code>DEVICE</code> — модель устройства, на котором будет выполняться тест.
+- <code>OS</code>— версия операционной системы на целевом устройстве.
+- <code>BASE_URL</code> – базовый Url выполнения теста для сайта browserstack.com.
 
 ## <img src="images/logo/Jenkins.svg" title="Jenkins" width="5%"/> Сборка в [Jenkins](https://jenkins.autotests.cloud/view/java_students/job/C39_AleksKulch_lesson18_Book_Club_Reviews/)
 ### Главная страница
@@ -187,9 +187,9 @@ src="images/screen/Jenkins_2.png">
 <img width="70%" title="Telegram Notifications" src="images/screen/Telegram.png">
 </p>
 
-## <img src="images/logo/Selenoid.svg" title="Allure TestOps" width="5%"/> Видео примера запуска тестов в Selenoid
+## <img src="images/logo/browserstack-original.svg" title="Browserstack" width="5%"/> Видео примера запуска тестов в Selenoid
 
-К тестам, в которых есть часть, которая запускается на удаленном браузере [Selenoid](https://aerokube.com/selenoid/), прилагается видео прогона.
+Видеопример выполнения теста на сервисе Browserstack.
 <p align="center">
   <img title="Selenoid Video" src="images/video/UI.gif">
 </p>

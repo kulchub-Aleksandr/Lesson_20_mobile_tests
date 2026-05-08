@@ -45,7 +45,7 @@ public class SearchPage {
         return this;
     }
 
-    @Step("Ввести поисковой запрос 'Appium'")
+    @Step("Ввести поисковой запрос '{searchQuery}'")
     public SearchPage enterSearchQuery () {
         if (container.is(Condition.visible)){
             containerCloseButton.click();
