@@ -5,19 +5,12 @@ import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 import pages.SearchPage;
 
-import static com.codeborne.selenide.CollectionCondition.sizeGreaterThan;
-import static com.codeborne.selenide.Selenide.$;
-import static com.codeborne.selenide.Selenide.$$;
-import static io.appium.java_client.AppiumBy.accessibilityId;
-import static io.appium.java_client.AppiumBy.id;
-import static io.qameta.allure.Allure.step;
-
 public class WikiBrowserStackSearchTests extends TestBase {
 
     SearchPage searchPage = new SearchPage();
 
     @Tag("remote")
-    @DisplayName("Тестировании мобильного приложения Wikipedia на удаленном эмуляторе")
+    @DisplayName("При вводе запроса в поисковую строку появляются результаты поиска")
     @Test
     void successfulSearchTest() {
         searchPage.skipStartScreen()
@@ -34,4 +27,55 @@ public class WikiBrowserStackSearchTests extends TestBase {
 //            $$(id("org.wikipedia.alpha:id/page_list_item_title"))
 //                    .shouldHave(sizeGreaterThan(0)));
     }
+
+
+    @Tag("remote")
+    @DisplayName("Можно выбрать первый результат поискового запроса")
+    @Test
+    void successfulSearchFirstResultTest() {
+        searchPage.skipStartScreen()
+                .clickSearchArea()
+                .enterSearchQuery()
+                .verifyResultListIsNotEmpty()
+                .clickSearchResultFirst()
+                .verifySearchFirstResultTitle();
+    }
+
+    @Tag("remote")
+    @DisplayName("Можно вернутся на главный поисковый экран из первого результата поискового запроса")
+    @Test
+    void successfulSearchFirstResultBackTest() {
+        searchPage.skipStartScreen()
+                .clickSearchArea()
+                .enterSearchQuery()
+                .verifyResultListIsNotEmpty()
+                .clickSearchResultFirst()
+                .verifySearchFirstResultTitle()
+                .clickBackButton()
+                .verifyResultListIsNotEmpty();
+    }
+
+    @Tag("remote")
+    @DisplayName("После выхода из главного поискового экрана остается список недавних запросов")
+    @Test
+    void recentSearchElementCheckTest() {
+        searchPage.skipStartScreen()
+                .clickSearchArea()
+                .enterSearchQuery()
+                .clickCloseButton()
+                .verifyRecentSearchElement();
+    }
+
+
+    @Tag("remote")
+    @DisplayName("После выхода из главного поискового экрана поисковая строчка пустая")
+    @Test
+    void recentSearchElementEmptyCheckTest() {
+        searchPage.skipStartScreen()
+                .clickSearchArea()
+                .enterSearchQuery()
+                .clickCloseButton()
+                .verifySearchFieldIsEmpty();
+    }
+
 }
