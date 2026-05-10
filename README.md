@@ -120,6 +120,13 @@ src="images/screen/Jenkins_1.png">
 src="images/screen/Jenkins_2.png">
 </p>
 
+### <img src="images/logo/browserstack-original.svg" title="Browserstack" width="5%"/> Страница отслеживания удаленного запуска в [Browserstack](https://app-automate.browserstack.com/home)
+
+<p align="center">
+<img title="Jenkins Build" 
+src="images/screen/browserstack_1.png">
+</p>
+
 ## <img src="images/logo/Allure_Report.svg" title="Allure Report" width="5%"/> Allure [Report](https://jenkins.autotests.cloud/job/C39_AleksKulch_lesson18_Book_Club_Reviews/14/allure/)
 
 Содержание Allure-отчета:
@@ -142,8 +149,6 @@ src="images/screen/Jenkins_2.png">
 <img title="Test Results in Alure" src="images/screen/Allure_2.png">
 </p>
 
-  <p align="center">  
-<img title="Allure Graphics" src="images/screen/Allure_4.png">
 
 ### Графики
 
@@ -159,24 +164,12 @@ src="images/screen/Jenkins_2.png">
 
 ### Dashboard
 <p align="center">
-<img title="Allure TestOps DashBoard" src="images/screen/Allure_Test_Ops_1.png">
+<img title="Allure TestOps DashBoard" src="images/screen/Allure_TestOps_1.png">
 </p>
 
 ### Результат выполнения автотеста
 <p align="center">
-<img title="Allure TestOps Tests" src="images/screen/Allure_Test_Ops_2.png">
-</p>
-
-## <img src="images/logo/Jira.svg" title="Allure TestOps" width="6%"/> Интеграция с [Jira](https://jira.autotests.cloud/browse/HOMEWORK-1600)
-
-Реализована интеграция <code>Allure TestOps</code> с <code>Jira</code>, в тикете отображается информация, какие тест-кейсы были написаны в рамках задачи и результат их прогона.
-
-<p align="center">
-<img title="Jira Task" src="images/screen/jira_1.png">
-</p>
-
-<p align="center">
-<img title="Jira Task" src="images/screen/jira_2.png">
+<img title="Allure TestOps Tests" src="images/screen/Allure_TestOps_2.png">
 </p>
 
 ## <img src="images/logo/Telegram.svg" title="Allure TestOps" width="7%"/> Уведомления в Telegram
@@ -189,7 +182,7 @@ src="images/screen/Jenkins_2.png">
 
 ## <img src="images/logo/browserstack-original.svg" title="Browserstack" width="5%"/> Видео примера запуска тестов в Selenoid
 
-Видеопример выполнения теста на сервисе Browserstack.
+Видеопример выполнения теста на сервисе [Browserstack](https://app-automate.browserstack.com/dashboard/v2/quick-start/setup-browserstack-sdk).
 <p align="center">
   <img title="Selenoid Video" src="images/video/Wiki.gif">
 </p>
