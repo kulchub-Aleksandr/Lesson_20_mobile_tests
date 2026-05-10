@@ -12,8 +12,8 @@
 - [Allure Report](#-allure-report)
 - [Интеграция с Allure TestOps](#-интеграция-с-allure-testops)  
 - [Интеграция с Jira](#-интеграция-с-jira)
-- [Уведомления в Telegram](#-уведомления-в-telegram)
-- [Видео примера запуска UI части тестов в Selenoid](#-видео-примера-запуска-тестов-в-selenoid)
+- [Уведомления в Telegram](#-уведомления-в-telegram)  
+- [Видеопример выполнения теста на сервисе Browserstack](#-видеопример-выполнения-теста-на-сервисе-browserstack)
 
 ## <span id="tech-stack"> :computer: Использованный стек технологий и инструментов
 
@@ -172,7 +172,7 @@ src="images/screen/browserstack_1.png">
 <img title="Allure TestOps Tests" src="images/screen/Allure_TestOps_2.png">
 </p>
 
-## <img src="images/logo/Telegram.svg" title="Allure TestOps" width="7%"/> Уведомления в Telegram
+## <img src="images/logo/Telegram.svg" title="Telegram" width="7%"/> Уведомления в Telegram
 
 После завершения сборки, бот созданный в <code>Telegram</code>, автоматически обрабатывает и отправляет сообщение с результатом пройденных тестов.
 
@@ -180,9 +180,8 @@ src="images/screen/browserstack_1.png">
 <img width="70%" title="Telegram Notifications" src="images/screen/Telegram.png">
 </p>
 
-## <img src="images/logo/browserstack-original.svg" title="Browserstack" width="5%"/> Видео примера запуска тестов в Selenoid
+## <img src="images/logo/browserstack-original.svg" title="Browserstack" width="5%"/> Видеопример выполнения теста на сервисе [Browserstack](https://app-automate.browserstack.com/dashboard/v2/quick-start/setup-browserstack-sdk).
 
-Видеопример выполнения теста на сервисе [Browserstack](https://app-automate.browserstack.com/dashboard/v2/quick-start/setup-browserstack-sdk).
 <p align="center">
   <img title="Selenoid Video" src="images/video/Wiki.gif">
 </p>
