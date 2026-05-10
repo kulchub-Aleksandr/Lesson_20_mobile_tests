@@ -10,8 +10,7 @@
 - [Запуск автотестов](#arrow_forward-запуск-автотестов)
 - [Сборка в Jenkins](#-сборка-в-jenkins)
 - [Allure Report](#-allure-report)
-- [Интеграция с Allure TestOps](#-интеграция-с-allure-testops)  
-- [Интеграция с Jira](#-интеграция-с-jira)
+- [Интеграция с Allure TestOps](#-интеграция-с-allure-testops)
 - [Уведомления в Telegram](#-уведомления-в-telegram)  
 - [Видеопример выполнения теста на сервисе Browserstack](#-видеопример-выполнения-теста-на-сервисе-browserstack)
 
