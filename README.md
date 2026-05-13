@@ -17,7 +17,9 @@
 ## <span id="tech-stack"> :computer: Использованный стек технологий и инструментов
 
 <p align="center">
+<a href="jetbrains.com" target="_blank" rel="noreferrer">
 <img width="6%" title="IntelliJ IDEA" src="images/logo/Intelij_IDEA.svg">
+</a>
 <img width="6%" title="GitHub" src="images/logo/GitHub.svg">
 <img width="6%" title="Java" src="images/logo/Java.svg">
 <img width="6%" title="Selenide" src="images/logo/Selenide.svg">
@@ -26,7 +28,7 @@
 <img width="6%" title="Android" src="images/logo/android-original.svg">
 <img width="6%" title="Androidstudio" src="images/logo/androidstudio-original.svg">
 <img width="5%" title="Appium" src="images/logo/appium.png">
-<img width="6%" title="Appium _Server.png" src="images/logo/appium _server.png">
+<img width="6%" title="Appium_Server.png" src="images/logo/appium _server.png">
 <img width="5%" title="Browserstack" src="images/logo/browserstack-original.svg">
 <img width="6%" title="Jenkins" src="images/logo/Jenkins.svg">
 <img width="6%" title="Allure Report" src="images/logo/Allure_Report.svg">
