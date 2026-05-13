@@ -106,7 +106,7 @@ remote_test
 - <code>OS</code>— версия операционной системы на целевом устройстве.
 - <code>BASE_URL</code> – базовый Url выполнения теста для сайта browserstack.com.
 
-## <img src="images/logo/Jenkins.svg" title="Jenkins" width="5%"/> Сборка в [Jenkins](https://jenkins.autotests.cloud/view/java_students/job/C39_AleksKulch_lesson18_Book_Club_Reviews/)
+## <img src="images/logo/Jenkins.svg" title="Jenkins" width="5%"/> Сборка в [Jenkins](https://jenkins.autotests.cloud/job/C39_AleksKulch_lesson20_mobile/)
 ### Главная страница
 <p align="center">
 <img title="Jenkins Build" 
@@ -155,7 +155,7 @@ src="images/screen/browserstack_1.png">
 <img title="Allure Graphics" src="images/screen/Allure_3.png">  
 </p>
 
-## <img src="images/logo/AllureTestOps.svg" title="Allure TestOps" width="5%"/> Интеграция с [Allure TestOps](https://allure.autotests.cloud/project/5160/dashboards)
+## <img src="images/logo/AllureTestOps.svg" title="Allure TestOps" width="5%"/> Интеграция с [Allure TestOps](https://allure.autotests.cloud/project/5190/dashboards)
 
 Результаты выполнения автотестов в сборке <code>Jenkins</code> передаются в <code>Allure TestOps</code>
 

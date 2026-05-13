@@ -1,4 +1,4 @@
-package pages;
+package screens;
 
 import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.ElementsCollection;
@@ -12,7 +12,7 @@ import static com.codeborne.selenide.Selenide.*;
 import static io.appium.java_client.AppiumBy.accessibilityId;
 import static io.appium.java_client.AppiumBy.id;
 
-public class SearchPage {
+public class SearchScreen {
 
     private final String searchQuery = "Appium";
 
@@ -32,19 +32,19 @@ public class SearchPage {
 
 
     @Step("Закрыть начальный экран")
-    public SearchPage skipStartScreen() {
+    public SearchScreen skipStartScreen() {
         back();
         return this;
     }
 
     @Step("Нажать на область поиска")
-    public SearchPage clickSearchArea() {
+    public SearchScreen clickSearchArea() {
         searchArea.click();
         return this;
     }
 
     @Step("Ввести поисковой запрос '{searchQuery}'")
-    public SearchPage enterSearchQuery() {
+    public SearchScreen enterSearchQuery() {
         if (container.is(Condition.visible)) {
             containerCloseButton.click();
         }
@@ -53,31 +53,31 @@ public class SearchPage {
     }
 
     @Step("Проверить, что по запросу есть результаты")
-    public SearchPage verifyResultListIsNotEmpty() {
+    public SearchScreen verifyResultListIsNotEmpty() {
         searchResultsList.shouldHave(sizeGreaterThan(0));
         return this;
     }
 
     @Step("Нажать на результат поиска")
-    public SearchPage clickSearchResultFirst() {
+    public SearchScreen clickSearchResultFirst() {
         searchResultFirst.click();
         return this;
     }
 
     @Step("Нажать на иконку Закрыть")
-    public SearchPage clickCloseButton() {
+    public SearchScreen clickCloseButton() {
         closeButton.click();
         return this;
     }
 
     @Step("Нажать Назад")
-    public SearchPage clickBackButton() {
+    public SearchScreen clickBackButton() {
         backButton.click();
         return this;
     }
 
     @Step("Проверить заголовок страницы поискового запроса '{searchQuery}'")
-    public SearchPage verifySearchFirstResultTitle() {
+    public SearchScreen verifySearchFirstResultTitle() {
         if (container.is(Condition.visible)) {
             containerCloseButton.click();
         }
@@ -86,13 +86,13 @@ public class SearchPage {
     }
 
     @Step("Проверка поисковой строки")
-    public SearchPage verifySearchFieldIsEmpty() {
+    public SearchScreen verifySearchFieldIsEmpty() {
         searchFiled.shouldHave(text("Search Wikipedia"));
         return this;
     }
 
     @Step("Проверка наличия строчки предыдущего запроса")
-    public SearchPage verifyRecentSearchElement() {
+    public SearchScreen verifyRecentSearchElement() {
         recentSearchElement.shouldHave(text(searchQuery));
         return this;
     }
