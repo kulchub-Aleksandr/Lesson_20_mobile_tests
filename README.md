@@ -44,7 +44,7 @@
   <a href="https://appium.io" target="_blank">
     <img width="5%" title="Appium" src="images/logo/appium.png">
   </a>
-  <a href="https://appium.io/docs/en/about-appium/getting-started/" target="_blank">
+  <a href="https://appium.io/docs/en/latest/quickstart/install/" target="_blank">
     <img width="6%" title="Appium Server" src="images/logo/appium_server.png">
   </a>
   <a href="https://www.browserstack.com" target="_blank">
@@ -53,7 +53,7 @@
   <a href="https://jenkins.io" target="_blank">
     <img width="6%" title="Jenkins" src="images/logo/Jenkins.svg">
   </a>
-  <a href="https://docs.qameta.io/allure/" target="_blank">
+  <a href="https://allurereport.org/" target="_blank">
     <img width="6%" title="Allure Report" src="images/logo/Allure_Report.svg">
   </a>
   <a href="https://telegram.org" target="_blank">
