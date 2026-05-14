@@ -149,7 +149,7 @@ src="images/screen/Jenkins_1.png">
 src="images/screen/Jenkins_2.png">
 </p>
 
-### <img src="images/logo/browserstack-original.svg" title="Browserstack" width="5%"/> Страница отслеживания удаленного запуска в [Browserstack](https://app-automate.browserstack.com/home)
+### <img src="images/logo/browserstack-original.svg" title="Browserstack" width="5%"/> Страница отслеживания удаленного запуска в [Browserstack](https://app-automate.browserstack.com/projects/First+Java+Project/builds/browserstack-build/18?tab=tests&testListView=spec&details=3354945659)
 
 <p align="center">
 <img title="Jenkins Build" 
