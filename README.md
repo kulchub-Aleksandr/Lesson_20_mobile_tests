@@ -156,7 +156,7 @@ src="images/screen/Jenkins_2.png">
 src="images/screen/browserstack_1.png">
 </p>
 
-## <img src="images/logo/Allure_Report.svg" title="Allure Report" width="5%"/> Allure [Report](https://jenkins.autotests.cloud/job/C39_AleksKulch_lesson18_Book_Club_Reviews/14/allure/)
+## <img src="images/logo/Allure_Report.svg" title="Allure Report" width="5%"/> Allure [Report](https://jenkins.autotests.cloud/job/C39_AleksKulch_lesson20_mobile/12/allure/)
 
 Содержание Allure-отчета:
 
