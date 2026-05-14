@@ -117,13 +117,13 @@ flowchart LR;
 ```bash
 clean
 remote_test
--DdeviceHost="$HOST"
--Dbrowserstack.user="$USER"
--Dbrowserstack.key="$KEY"
--Dapp="$APP"
--Ddevice="$DEVICE"
--Dos_version="$OS"
--DbaseUrl="$BASE_URL"
+-DdeviceHost=${HOST}
+-Dbrowserstack.user=${USER}
+-Dbrowserstack.key=${KEY}
+-Dapp=${APP}
+-Ddevice=${DEVICE}
+-Dos_version=${OS}
+-DbaseUrl=${BASE_URL}
 ```
 
 ### Параметры сборки
