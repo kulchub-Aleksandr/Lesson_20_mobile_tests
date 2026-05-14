@@ -26,7 +26,6 @@ public class WikiBrowserStackSearchTests extends TestBase {
         resultSearchScreen.verifyResultListIsNotEmpty();
     }
 
-
     @Tag("remote")
     @DisplayName("Можно выбрать первый результат поискового запроса")
     @Test
